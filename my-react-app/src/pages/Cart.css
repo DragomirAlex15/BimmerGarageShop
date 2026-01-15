@@ -1,0 +1,94 @@
+.cart-page {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+.cart-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-3px);
+  border-color: yellow;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.cart-item-info {
+  flex: 1;
+  text-align: left;
+}
+
+.cart-item-info p {
+  margin: 0.2rem 0;
+  color: #ccc;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.qty-controls button {
+  background: yellow;
+  color: black;
+  border: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.qty-controls button:hover {
+  background: orange;
+}
+
+.cart-page h2 {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  color: yellow;
+}
+
+.cart-page .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: yellow;
+  color: black;
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cart-page .btn:hover {
+  background: orange;
+}

@@ -1,6 +1,6 @@
 import "./Products.css";
 
-function Products() {
+function Products({addToCart}) {
   // Lista ta de produse
   const products = [
     {
@@ -33,7 +33,7 @@ function Products() {
             <img src={product.image} alt={product.name} />
             <h2>{product.name}</h2>
             <p>{product.price} RON</p>
-            <button>Adaugă în coș</button>
+            <button onClick={() => addToCart(product)}>Adaugă în coș</button>
           </div>
         ))}
       </div>
