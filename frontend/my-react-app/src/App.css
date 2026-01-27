@@ -112,3 +112,31 @@ footer {
 .social-icons a:hover {
   color: #ffcc00;
 }
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.2s ease;
+  height: 350px; /* fixăm înălțimea cardului */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* distribuie elementele uniform */
+}
+
+.product-card img {
+  max-height: 150px; /* imaginea nu va depăși înălțimea asta */
+  object-fit: contain; /* păstrează proporțiile */
+  margin-bottom: 10px;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  align-items: start; /* toate cardurile încep de sus */
+}
