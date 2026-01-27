@@ -23,5 +23,28 @@ def root():
 def info():
     return {
         "title": "BIMMERGARAGE",
-        "description": "Platforma dedicata pasionatilor",
+        
     }
+@app.get("/products")
+def get_products():
+    return [
+        {
+            "id": 1,
+            "name": "Smartdisplay Boost/Temp Gauged",
+            "price": 1500,
+            "image": "/sd.jpeg",
+        },
+        {
+            "id": 2,
+            "name": "Prosop microfibre",
+            "price": 80,
+            "image": "/prosop.jpeg",
+        },
+        {
+            "id": 3,
+            "name": "Sticker BimGarage",
+            "price": 10,
+            "image": "/sticker.jpeg",
+        },
+    ]
+
