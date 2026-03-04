@@ -7,6 +7,9 @@ import Products from "./pages/Products"; // ✅ asta trebuie importată
 import Contact from "./pages/Contact";
 import Cart from "./pages/Cart";
 import Footer from "./components/Footer";
+import Login from "./pages/Login";
+import Register from "./pages/Register"
+import Profile from "./pages/Profile"
 import "./App.css";
 
 function App() {
@@ -42,6 +45,9 @@ function App() {
           <Route path="/products" element={<Products addToCart={addToCart} />} />
           <Route path="/cart" element={<Cart cart={cart} updateQty={updateQty} />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
         <Footer />
       </div>
